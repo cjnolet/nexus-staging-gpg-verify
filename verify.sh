@@ -1,4 +1,4 @@
-STAGING_REPO=$1
+STAGING_REPO=${1%/}
 WORKING_COPY_DIR=staging
 
 wget --mirror --directory-prefix $WORKING_COPY_DIR --no-parent -e robots=off $STAGING_REPO/
